@@ -1,0 +1,15 @@
+---
+language: python
+
+dist: bionic
+
+os:
+  - linux
+
+before_install:
+  - sudo apt-get update -q
+  - sudo apt-get install -y bro
+
+script:
+  - bro -Cr tests/http.trace -b scripts/main.bro
+  - grep "HTTP_Smuggling" notice.log | wc -l |grep -q 4

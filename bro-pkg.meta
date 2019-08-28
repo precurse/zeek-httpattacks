@@ -1,0 +1,5 @@
+[package]
+description = Checks for HTTP anomalies typically used for attacking.
+script_dir = scripts
+tags = http, detection
+version = master
