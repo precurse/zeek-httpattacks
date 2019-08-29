@@ -31,6 +31,15 @@ When any of these are detected, an `HTTP_Smuggling` notice will be added to `not
 
 There are currently no configuration flags that can be used with this module. If you would like a new feature, please create a pull request.
 
+# notice.log Examples
+
+```
+HTTPATTACKS::HTTP_Smuggling	Multiple HTTP Host headers detected
+HTTPATTACKS::HTTP_Smuggling	More than one CL or TE header detected
+HTTPATTACKS::HTTP_Smuggling	CL and TE headers detected
+HTTPATTACKS::HTTP_Smuggling	HTTP GET request with body detected
+```
+
 # Automated Testing
 
 Travis CI is used to run automated tests on each and every commit.
