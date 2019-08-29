@@ -12,4 +12,4 @@ before_install:
 
 script:
   - bro -Cr tests/http.trace -b scripts/main.bro
-  - grep "HTTP_Smuggling" notice.log | wc -l |grep -q 4
+  - grep "HTTP_Smuggling" notice.log | wc -l |grep -q 5
