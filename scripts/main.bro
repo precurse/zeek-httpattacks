@@ -1,7 +1,7 @@
 @load base/protocols/http
 @load base/frameworks/notice
 
-module HTTPATTACK;
+module HTTPATTACKS;
 
 redef enum Notice::Type += {
     HTTP_Smuggling,
