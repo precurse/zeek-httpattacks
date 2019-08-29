@@ -2,7 +2,7 @@
 set -ex
 python -m SimpleHTTPServer 8080 &
 PYPID=$!
-sudo tcpdump -i lo -w tests/http.trace &
+sudo tcpdump -i lo -w tests/http.trace port 8080 &
 TCPDPID=$!
 
 sleep 3 # Wait for http server
