@@ -12,6 +12,21 @@ This module detects HTTP requests that are non RFC compliant requests including:
 
 When any of these are detected, an `HTTP_Smuggling` notice will be added to `notice.log`.
 
+# Installation
+- Install via Zeek package manager:
+   ```bash
+   $ zkg install zeek-httpattacks
+
+   # or for legacy installs
+
+   $ bro-pkg install zeek-httpattacks
+   ```
+
+- Download the files to `$PREFIX/bro/share/bro/site/zeek-httpattacks` and add the following to your `local.bro`:
+    ```bash
+    @load ./zeek-httpattacks
+    ```
+
 # Configuration
 
 There are currently no configuration flags that can be used with this module. If you would like a new feature, please create a pull request.
