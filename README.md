@@ -7,7 +7,8 @@
 This module detects HTTP requests that are non RFC compliant requests including:
 - Multiple HTTP Host headers
 - GET requests with a body
-- Multiple `Content-Length` and `Transfer-Encoding` headers
+- Both `Content-Length` and `Transfer-Encoding` present
+- Multiple of `Content-Length` and/or `Transfer-Encoding` headers
 
 When any of these are detected, an `HTTP_Smuggling` notice will be added to `notice.log`.
 
