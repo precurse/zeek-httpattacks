@@ -1,15 +1,10 @@
 ---
 language: python
 
-dist: bionic
+dist: focal
 
 os:
   - linux
 
-before_install:
-  - sudo apt-get update -q
-  - sudo apt-get install -y bro
-
 script:
-  - bro -Cr tests/http.trace -b scripts/main.bro
-  - grep "HTTP_Smuggling" notice.log | wc -l |grep -q 5
+  - tests/travis.sh
