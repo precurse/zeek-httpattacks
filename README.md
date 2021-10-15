@@ -1,6 +1,6 @@
 # zeek-httpattacks
 
-[![Build Status](https://travis-ci.com/precurse/zeek-httpattacks.svg?branch=master)](https://travis-ci.com/precurse/zeek-httpattacks)
+[![Build Status](https://app.travis-ci.com/precurse/zeek-httpattacks.svg?branch=master)](https://app.travis-ci.com/precurse/zeek-httpattacks)
 
 # Description
 
