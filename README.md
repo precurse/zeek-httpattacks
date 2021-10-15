@@ -19,10 +19,10 @@ When any of these are detected, an `HTTP_Smuggling` notice will be added to `not
 
    # or for legacy installs
 
-   $ bro-pkg install zeek-httpattacks
+   $ zkg install zeek-httpattacks
    ```
 
-- Download the files to `$PREFIX/bro/share/bro/site/zeek-httpattacks` and add the following to your `local.bro`:
+- Download the files to `$PREFIX/zeek/share/zeek/site/zeek-httpattacks` and add the following to your `local.zeek`:
     ```bash
     @load ./zeek-httpattacks
     ```

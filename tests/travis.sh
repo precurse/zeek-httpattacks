@@ -9,6 +9,6 @@ sudo apt-get install -y zeek python3-git
 yes Y | sudo /opt/zeek/bin/zkg install .
 
 # Test log parsing
-/opt/zeek/bin/zeek -Cr tests/http.trace -b scripts/main.bro || true
+/opt/zeek/bin/zeek -Cr tests/http.trace -b scripts/main.zeek || true
 grep "HTTP_Smuggling" notice.log | wc -l |grep -q 5
 
