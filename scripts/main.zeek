@@ -10,7 +10,7 @@ redef enum Notice::Type += {
 # Check HTTP GET Request for BODY
 event http_entity_data(c: connection, is_orig: bool, length: count, data: string)
 {
-    if (is_orig && c$http$method == "GET")
+    if (is_orig && c$http?$method && c$http$method == "GET")
         NOTICE([$note=HTTP_Smuggling,
         $msg="HTTP GET request with body detected",
         $conn = c]);
